@@ -64,21 +64,21 @@ def app():
 
 
 
-    # delete the file
-    if st.session_state["Synthesize Success"]==True:
-        try:
-            os.remove(st.session_state["sythesized_audio_name"])
-            for file in os.listdir(path):
-                os.remove(os.path.join(path, file))
-        except:
-            pass 
-
-    if st.session_state["Synthesize Success"]==True and st.session_state["sythesized_result"] is not None:
-        download_button=st.download_button(
-        label="Download",
-        data=st.session_state["sythesized_result"],
-        file_name=output_path_mp3,
-        ) 
+        # delete the file
+        if st.session_state["Synthesize Success"]==True:
+            try:
+                os.remove(st.session_state["sythesized_audio_name"])
+                for file in os.listdir(path):
+                    os.remove(os.path.join(path, file))
+            except:
+                pass 
+            
+        if st.session_state["Synthesize Success"]==True and st.session_state["sythesized_result"] is not None:
+            download_button=st.download_button(
+            label="Download",
+            data=st.session_state["sythesized_result"],
+            file_name=output_path_mp3,
+            ) 
         
 
 if __name__ == '__main__':
