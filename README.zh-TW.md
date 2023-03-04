@@ -1,10 +1,10 @@
-# CHT TTS
+# 中文語音合成
 
 [![zh-TW](https://img.shields.io/badge/lang-zh--TW-yellow)](./README.zh-TW.md)
 
 使用 streamlit 應用程序構建一個簡單的 tts 演示頁面。
 
-![streamlit_app](./assets/streamlit.jpg)()
+![streamlit_app](./assets/streamlit.jpg)
 
 ## 用法
 
@@ -21,7 +21,7 @@
     -   註冊到[streamlit.io](https://streamlit.io/)使用你的 github 帳戶
     -   點擊`New App`按鈕
     -   選擇分叉的存儲庫
-    -   Set the `Advanced Setting`
+    -   設置`Advanced Setting`
         -   選擇與`python 3.8`
         -   將 API_KEY 設置為秘密
                 CHT_API_KEY = "your_api_key"
