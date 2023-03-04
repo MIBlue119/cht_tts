@@ -1,8 +1,10 @@
 # CHT TTS
 
+[![zh-TW](https://img.shields.io/badge/lang-zh--TW-yellow)](./README.zh-TW.md)
+
 Use streamlit app to build a simple tts demo page.
 
-![streamlit_app]()()
+![streamlit_app](./assets/streamlit.jpg)()
 
 ## Usage
 
