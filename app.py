@@ -62,8 +62,6 @@ def app():
             st.session_state["sythesized_result"]=f.read()
         st.session_state["Synthesize Success"]=True
 
-
-
         # delete the file
         if st.session_state["Synthesize Success"]==True:
             try:
@@ -72,7 +70,7 @@ def app():
                     os.remove(os.path.join(path, file))
             except:
                 pass 
-            
+
         if st.session_state["Synthesize Success"]==True and st.session_state["sythesized_result"] is not None:
             download_button=st.download_button(
             label="Download",
