@@ -6,6 +6,9 @@ from synthesize import generate_taiwanese_tts
 import streamlit as st
 
 CHT_API_KEY = os.getenv("CHT_API_KEY")
+if CHT_API_KEY is None:
+    # Use streamlit secrets to set CHT_API_KEY
+    CHT_API_KEY = st.secrets["CHT_API_KEY"]
 def get_audio_download_link(audio_bytes_io):
     """Generates a link allowing the audio to be downloaded
 	    in:  audio_bytes  io
