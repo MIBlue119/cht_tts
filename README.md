@@ -4,7 +4,7 @@
 
 Use streamlit app to build a simple tts demo page.
 
-![streamlit_app](./assets/streamlit.jpg)()
+![streamlit_app](./assets/streamlit.jpg)
 
 ## Usage
 
